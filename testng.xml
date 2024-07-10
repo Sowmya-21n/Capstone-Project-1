@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.TestNGListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="chrome test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.BrandPageTest">
+                <methods>
+                    <include name="testBrandPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutPageTest">
+                <methods>
+                    <include name="testCheckoutPage"/>
+                </methods>
+            </class>
+            <class name="tests.DepartmentPageTest">
+                <methods>
+                    <include name="departmentTest"/>
+                </methods>
+            </class>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="validateTitle"/>
+                    <include name="bottomLink"/>
+                    <include name="openWebTest"/>
+                </methods>
+            </class>
+            <class name="tests.LoginPageTest">
+                <methods>
+                    <include name="testLoginPage"/>
+                </methods>
+            </class>
+            <class name="tests.NegativeLoginPage">
+                <methods>
+                    <include name="testNegativeLoginPage"/>
+                </methods>
+            </class>
+            <class name="tests.NegativeSignUp">
+                <methods>
+                    <include name="negativeSignUp"/>
+                </methods>
+            </class>
+            <class name="tests.ShoppingCartPageTest">
+                <methods>
+                    <include name="searchProduct"/>
+                </methods>
+            </class>
+            <class name="tests.SignUpPageTest">
+                <methods>
+                    <include name="validatePositiveSignUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="firefox test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.BrandPageTest">
+                <methods>
+                    <include name="testBrandPage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutPageTest">
+                <methods>
+                    <include name="testCheckoutPage"/>
+                </methods>
+            </class>
+            <class name="tests.DepartmentPageTest">
+                <methods>
+                    <include name="departmentTest"/>
+                </methods>
+            </class>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="validateTitle"/>
+                    <include name="bottomLink"/>
+                    <include name="openWebTest"/>
+                </methods>
+            </class>
+            <class name="tests.LoginPageTest">
+                <methods>
+                    <include name="testLoginPage"/>
+                </methods>
+            </class>
+            <class name="tests.NegativeLoginPage">
+                <methods>
+                    <include name="testNegativeLoginPage"/>
+                </methods>
+            </class>
+            <class name="tests.NegativeSignUp">
+                <methods>
+                    <include name="negativeSignUp"/>
+                </methods>
+            </class>
+            <class name="tests.ShoppingCartPageTest">
+                <methods>
+                    <include name="searchProduct"/>
+                </methods>
+            </class>
+            <class name="tests.SignUpPageTest">
+                <methods>
+                    <include name="validatePositiveSignUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
